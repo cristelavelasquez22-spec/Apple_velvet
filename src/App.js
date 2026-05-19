@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Login from './components/Login';
+import Inventario from './components/Inventario';
+import Carrito from './components/Carrito'; // <--- Asegúrate de que este archivo exista
 
 function App() {
+  const [pantalla, setPantalla] = useState('login');
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Lógica de navegación por estados */}
+      {pantalla === 'login' && (
+        <Login 
+          onAdmin={() => setPantalla('inventario')} 
+          onUser={() => setPantalla('cliente')} 
+        />
+      )}
+      
+      {pantalla === 'inventario' && (
+        <Inventario onSalir={() => setPantalla('login')} />
+      )}
+      
+      {pantalla === 'cliente' && (
+        <Carrito onSalir={() => setPantalla('login')} />
+      )}
+      {pantalla === 'login' && (
+  <Login 
+    onAdmin={() => setPantalla('inventario')} 
+    onUser={() => setPantalla('carrito')} 
+  />
+)}
     </div>
   );
 }
