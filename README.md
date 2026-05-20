@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# 👑 Apple Velvet - Sistema de Inventario Premium y Catálogo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+¡Bienvenido a **Apple Velvet**! Una aplicación web full-stack de lujo diseñada para la gestión eficiente de inventarios de productos tecnológicos exclusivos y visualización de catálogo para usuarios.
 
-## Available Scripts
+> *"Lujo y red, Apple Velvet."*
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Características del Proyecto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Panel de Administración (Inventario):** - Registro de nuevos modelos con subida de imágenes en tiempo real.
+  - Modificación dinámica de precios, stock y datos del producto.
+  - Eliminación segura de artículos del catálogo.
+  - **Generación de Reportes:** Botón integrado para descargar el estado actual del inventario en formato **PDF Premium** con la paleta de colores de la marca.
+- **Área de Usuario (Cliente):** - Catálogo interactivo en cuadrícula (Grid) que consume datos en tiempo real.
+  - Sistema de carrito de compras funcional para añadir productos y calcular el total de forma dinámica.
+- **Backend Robusto:** API REST estructurada para el manejo de peticiones HTTP (`GET`, `POST`, `PUT`, `DELETE`).
+- **Persistencia de Datos:** Conexión local optimizada a un servidor de bases de datos relacional.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Tecnologías Utilizadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Frontend
+- **React.js** (Hooks, Context/State Management)
+- **CSS-in-JS** (Estilos minimalistas y elegantes en tonos vino `#550b14` y beige `#cbc0b2`)
+- **jsPDF & jsPDF-AutoTable** (Generación nativa de documentos PDF de alta calidad)
 
-### `npm run build`
+### Backend
+- **Node.js** & **Express.js** (Entorno de ejecución y framework de servidor)
+- **Multer** (Middleware para el procesamiento y almacenamiento local de archivos/imágenes)
+- **CORS** (Seguridad en el intercambio de recursos de origen cruzado)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Base de Datos
+- **MariaDB** / **MySQL** (Gestión de almacenamiento relacional para el catálogo)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📦 Arquitectura de Base de Datos
 
-### `npm run eject`
+El sistema utiliza una tabla llamada `productos` dentro de la base de datos `fastech_db`. La estructura base incluye:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- `id` (INT, Primary Key, Auto Increment)
+- `nombre` (VARCHAR)
+- `precio` (DECIMAL)
+- `stock` (INT)
+- `imagen` (VARCHAR - Ruta local del servidor)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
