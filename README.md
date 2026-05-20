@@ -1,3 +1,4 @@
+
  Apple Velvet - Sistema de Inventario Premium y Catálogo
 
 ¡Bienvenido a **Apple Velvet**! Una aplicación web full-stack de lujo diseñada para la gestión eficiente de inventarios de productos tecnológicos exclusivos y visualización de catálogo para usuarios.
@@ -11,6 +12,7 @@
 - **Panel de Administración (Inventario):** - Registro de nuevos modelos con subida de imágenes en tiempo real.
   - Modificación dinámica de precios, stock y datos del producto.
   - Eliminación segura de artículos del catálogo.
+    <img width="1330" height="764" alt="usuario" src="https://github.com/user-attachments/assets/994190a7-32f7-4c08-a020-be23fe2c3c3d" />
   - **Generación de Reportes:** Botón integrado para descargar el estado actual del inventario en formato **PDF Premium** con la paleta de colores de la marca.
 - **Área de Usuario (Cliente):** - Catálogo interactivo en cuadrícula (Grid) que consume datos en tiempo real.
   - Sistema de carrito de compras funcional para añadir productos y calcular el total de forma dinámica.
