@@ -1,4 +1,4 @@
-# 👑 Apple Velvet - Sistema de Inventario Premium y Catálogo
+ Apple Velvet - Sistema de Inventario Premium y Catálogo
 
 ¡Bienvenido a **Apple Velvet**! Una aplicación web full-stack de lujo diseñada para la gestión eficiente de inventarios de productos tecnológicos exclusivos y visualización de catálogo para usuarios.
 
@@ -6,7 +6,7 @@
 
 ---
 
-## 🚀 Características del Proyecto
+ Características del Proyecto
 
 - **Panel de Administración (Inventario):** - Registro de nuevos modelos con subida de imágenes en tiempo real.
   - Modificación dinámica de precios, stock y datos del producto.
@@ -19,7 +19,7 @@
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+ Tecnologías Utilizadas
 
 ### Frontend
 - **React.js** (Hooks, Context/State Management)
@@ -36,7 +36,7 @@
 
 ---
 
-## 📦 Arquitectura de Base de Datos
+##  Arquitectura de Base de Datos
 
 El sistema utiliza una tabla llamada `productos` dentro de la base de datos `fastech_db`. La estructura base incluye:
 
